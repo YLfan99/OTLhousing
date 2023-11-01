@@ -18,11 +18,12 @@
           id="LeftBanner"
         >
           <form method="POST" class="container-fluid form mb-5">
-            {{ form.hidden_tag() }}
+            {% csrf_token %}
+            {{ form.as_p }}
             <div class="row">
               <h1 class="display-3 fw-bold">Find Your</h1>
               <h1>Bengaluru House Price</h1>
-              <h6 class="fw-normal">Enter required details to estimate your house price in the Bengaluru city.</h6>
+              <h6 class="fw-normal">Enter required details to estimate your house price in Melbourne.</h6>
             </div>
             <div class="row my-5">
               <div class="my-4">
